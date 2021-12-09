@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+body.note{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+    grid-template-areas: 'head head head head head'
+                        'nav nav nav nav nav'
+                        '. main main main .'
+                        'foot foot foot foot foot';
+    background-image: url(pizza_desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body.note>header{
+    grid-area: head;
+    background-color: darkorchid;
+}
+
+body.note>nav{
+    grid-area: nav;
+    background-color: darkslategray;
+}
+
+body.note>main{
+    grid-area: main;
+    background-color: rgb(234, 220, 245);
+}
+
+body.note>footer{
+    grid-area: foot;
+    background-color: darkviolet;
+}
