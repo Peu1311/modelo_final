@@ -1,0 +1,86 @@
+/*página de estilos para notebook e tablet*/
+
+*{
+    box-sizing: border-box;
+}
+
+body.note{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 5vw 30vw 30vw 30vw 5vw;
+    grid-template-areas: 'head head head head head'
+                        'nav nav nav nav nav'
+                        '. main main main .'
+                        'foot foot foot foot foot';
+    background-image: url(pizza_note.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body.note>header{
+    grid-area: head;
+    background-color: darkorchid;
+}
+
+body.note>nav{
+    grid-area: nav;
+    background-color: darkslategray;
+}
+
+body.note>main{
+    grid-area: main;
+    background-color: rgb(234, 220, 245);
+}
+
+main.note{
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+}
+
+details#calabresa{
+    background-image: url(calabresa_note.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 98%;
+    height: 200px;
+    margin: auto;
+}
+
+details#frango{
+    background-image: url(frango_note.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 98%;
+    height: 200px;
+    margin: auto;
+}
+
+details#mucarela{
+    background-image: url(muçarela_note.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 98%;
+    height: 200px;
+    margin: auto;
+}
+
+summary{
+    background-color: rgb(755, 755, 755, 0.4);
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(755, 755, 755, 0.4);
+}
+
+body.note>footer{
+    grid-area: foot;
+    background-color: darkviolet;
+}

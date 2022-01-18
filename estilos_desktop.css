@@ -1,0 +1,86 @@
+/*página de estilos para desktop*/
+
+*{
+    box-sizing: border-box;
+}
+
+body.desktop{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw;
+    grid-template-areas: 'head head head head head head head head head head'
+                        'nav nav nav nav nav nav nav nav nav nav'
+                        '. main main main main main main main main .'
+                        'foot foot foot foot foot foot foot foot foot foot';
+    background-image: url('pizza_desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body.desktop>header{
+    grid-area: head;
+    background-color: blue;
+}
+
+body.desktop>nav{
+    grid-area: nav;
+    background-color: chocolate;
+}
+
+body.desktop>main{
+    grid-area: main;
+    background-color: aqua;
+}
+
+main.desktop{
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+}
+
+details#calabresa{
+    background-image: url(calabresa_desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 98%;
+    height: 200px;
+    margin: auto;
+}
+
+details#frango{
+    background-image: url(frango_desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 98%;
+    height: 200px;
+    margin: auto;
+}
+
+details#mucarela{
+    background-image: url(muçarela_desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 98%;
+    height: 200px;
+    margin: auto;
+}
+
+summary{
+    background-color: rgb(755, 755, 755, 0.4);
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(755, 755, 755, 0.4);
+}
+
+body.desktop>footer{
+    grid-area: foot;
+    background-color: darkgray;
+}

@@ -1,0 +1,86 @@
+/*página de estilos para celular*/
+
+*{
+    box-sizing: border-box;
+}
+
+body.phone{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 2.5vw 95vw 2.5vw;
+    grid-template-areas: 'head head head'
+                        'nav nav nav'
+                        '. main .'
+                        'foot foot foot';
+    background-image: url(pizza_phone.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body.phone>header{
+    grid-area: head;
+    background-color: forestgreen;
+}
+
+body.phone>nav{
+    grid-area: nav;
+    background-color: fuchsia;
+}
+
+body.phone>main{
+    grid-area: main;
+    background-color: brown;
+}
+
+main.phone{
+    display: grid;
+    grid-template-columns: 95vw;
+}
+
+details#calabresa{
+    background-image: url(calabresa_phone.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 98%;
+    height: 200px;
+    margin: auto;
+}
+
+details#frango{
+    background-image: url(frango_phone.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 98%;
+    height: 200px;
+    margin: auto;
+}
+
+details#mucarela{
+    background-image: url(muçarela_phone.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 98%;
+    height: 200px;
+    margin: auto;
+}
+
+summary{
+    background-color: rgb(755, 755, 755, 0.4);
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(755, 755, 755, 0.4);
+}
+
+body.phone>footer{
+    grid-area: foot;
+    background-color: hotpink;
+}
