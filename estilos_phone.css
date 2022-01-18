@@ -6,7 +6,7 @@ body.phone{
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 5vw 90vw 5vw;
+    grid-template-columns: 2.5vw 95vw 2.5vw;
     grid-template-areas: 'head head head'
                         'nav nav nav'
                         '. main .'
