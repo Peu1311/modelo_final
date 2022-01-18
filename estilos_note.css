@@ -45,7 +45,7 @@ details#calabresa{
     background-position: center;
     width: 98%;
     height: 200px;
-    margin: auto;
+    margin: 10px auto;
 }
 
 details#frango{
@@ -54,7 +54,7 @@ details#frango{
     background-position: center;
     width: 98%;
     height: 200px;
-    margin: auto;
+    margin: 10px auto;
 }
 
 details#mucarela{
@@ -63,7 +63,7 @@ details#mucarela{
     background-position: center;
     width: 98%;
     height: 200px;
-    margin: auto;
+    margin: 10px auto;
 }
 
 summary{
