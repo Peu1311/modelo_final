@@ -37,7 +37,7 @@ body.note>nav{
 
 body.note>main{
     grid-area: main;
-    background-color: rgb(234, 220, 245);
+    background-color: var(--b_transp);
 }
 
 /*foi necessário mudar o template-columns pois no auto a imagem quebra, da maneira que está força uma largura fixa*/

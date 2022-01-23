@@ -37,7 +37,7 @@ body.phone>nav{
 
 body.phone>main{
     grid-area: main;
-    background-color: brown;
+    background-color: var(--b_transp);
 }
 
 /*foi necessário mudar o template-columns pois quando está no auto a imagem quebra, assim força uma largura fixa*/
