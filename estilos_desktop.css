@@ -1,5 +1,11 @@
 /*página de estilos para desktop*/
 
+/*declaração de variáveis na raíz*/
+
+:root{
+    --b_transp: rgb(755, 755, 755, 0.4) 
+}
+
 *{
     box-sizing: border-box;
 }
@@ -31,13 +37,17 @@ body.desktop>nav{
 
 body.desktop>main{
     grid-area: main;
-    background-color: aqua;
+    background-color: var(--b_transp);
 }
+
+/*foi necessário mudar o template-columns pois no auto a imagem quebra, da maneira que está força uma largura fixa*/
 
 main.desktop{
     display: grid;
     grid-template-columns: 20vw 20vw 20vw 20vw;
 }
+
+/*os 98% representam a porção que ocupará em relação à porção destinada a ele*/
 
 details#calabresa{
     background-image: url(calabresa_desktop.jpg);
@@ -67,17 +77,23 @@ details#mucarela{
 }
 
 summary{
-    background-color: rgb(755, 755, 755, 0.4);
+    background-color: var(--b_transp);
     margin: 0;
     padding: 0;
 }
+
+summary::marker{
+    color: rgb(755, 755, 755, 0);
+}
+
+/*os 100% na altura e largura indicam que ocupará todo o espaço reservado a ele, e com o efeito de cor de fundo da a impressão de ocupar toda a imagem*/
 
 p{
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
-    background-color: rgb(755, 755, 755, 0.4);
+    background-color: var(--b_transp);
 }
 
 body.desktop>footer{

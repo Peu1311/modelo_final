@@ -1,5 +1,11 @@
 /*página de estilos para celular*/
 
+/*declaração de variáveis na raíz*/
+
+:root{
+    --b_transp: rgb(755, 755, 755, 0.4) 
+}
+
 *{
     box-sizing: border-box;
 }
@@ -34,10 +40,14 @@ body.phone>main{
     background-color: brown;
 }
 
+/*foi necessário mudar o template-columns pois quando está no auto a imagem quebra, assim força uma largura fixa*/
+
 main.phone{
     display: grid;
     grid-template-columns: 95vw;
 }
+
+/*os 98% representam a porção que ocupará em relação à porção destinada a ele*/
 
 details#calabresa{
     background-image: url(calabresa_phone.jpg);
@@ -67,17 +77,19 @@ details#mucarela{
 }
 
 summary{
-    background-color: rgb(755, 755, 755, 0.4);
+    background-color: var(--b_transp);
     margin: 0;
     padding: 0;
 }
+
+/*os 100% na altura e largura representam a porção que ocupará em relação à porção destinada, e com o efeito de cor de fundo da a impressão de cobrir toda a imagem*/
 
 p{
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
-    background-color: rgb(755, 755, 755, 0.4);
+    background-color: var(--b_transp);
 }
 
 body.phone>footer{
