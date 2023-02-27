@@ -5,5 +5,6 @@ window.document.querySelector('button').addEventListener('click',()=>{
         cache:'default'
     }
     fetch('./objeto.json',opt)
-    .then(data=>console.log(data))
+    .then(data=>data.json())
+    .then(dados=>console.log(dados))
 })
